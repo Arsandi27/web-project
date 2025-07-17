@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Company Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+ 
+  </style>
+</head>
+<body>
+<header data-aos="fade-down">
+  <div style="display: flex; justify-content: center;">
+    <nav style="display: flex; gap: 30px; align-items: center;">
+      <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/home.png" alt="Home Icon" />
+        Home
+      </a>
+      <a href="profile.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/user.png" alt="Profile Icon" />
+        Our Profile
+      </a>
+      <a href="message.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/chat.png" alt="Message Icon" />
+        Message Us
+      </a>
+    </nav>
+  </div>
+</header>
+  <section id="home" data-aos="fade-up">
+    <h1>Hi <span id="username">Name</span>, Welcome To Website</h1>
+    <p>Short about Dens Tech</p>
+     <img src="img/gedung.jpeg" alt="Our Team" style="width: 100%; max-width: 800px; margin: 20px auto; display: block; border-radius: 10px;">
+  </section>
+<section id="profile" data-aos="fade-right">
+  <div class="profile-banner">
+    <h2>Profil Kami</h2>
+    <p>
+      Tamu undangan yang terhormat, mitra yang kami hormati, dan calon investor yang kami banggakan,
+    </p>
+    <p>
+      Kami bukan sekadar perusahaan. Kami adalah sebuah <strong>gerakan</strong> — didorong oleh <strong>inovasi</strong>, dijiwai oleh <strong>integritas</strong>, dan dibangun atas dasar semangat tanpa henti dalam meraih <strong>keunggulan</strong>.
+    </p>
+    <p>
+      Di inti dari semua yang kami lakukan terdapat satu misi utama:<br>
+      <strong>Memberikan layanan terbaik bagi klien kami</strong> — bukan hanya untuk memenuhi ekspektasi, tetapi untuk melampauinya — setiap saat.
+    </p>
+    <p>
+      Visi kami berani dan jelas:<br>
+      <strong>Menjadi perusahaan terdepan di industri kami</strong> — bukan karena kebetulan, melainkan karena perencanaan yang matang.
+    </p>
+    <p>
+      Bagaimana kami akan mencapainya?
+    </p>
+    <ul>
+      <li><strong>Kepuasan pelanggan</strong> sebagai inti dari setiap keputusan</li>
+      <li><strong>Inovasi</strong> yang tidak pernah berhenti</li>
+      <li><strong>Keunggulan</strong> sebagai standar, bukan sekadar tujuan</li>
+    </ul>
+    <p>
+      Kepada Anda yang sedang mencari peluang investasi terbaik — Anda tidak hanya berinvestasi pada sebuah bisnis.<br>
+      Anda sedang berinvestasi pada tim yang berani memimpin, pada misi yang telah berjalan, dan pada masa depan yang sedang dibangun hari ini.
+    </p>
+    <p><strong>Terima kasih, dan selamat datang.</strong></p>
+  </div>
+</section>
+
+
+  <section id="location" data-aos="zoom-in">
+    <h2>Our Headquarter</h2>
+    <div class="locations">
+      <div data-aos="fade-up">Jakarta</div>
+      <div data-aos="fade-up" data-aos-delay="100">Bandung</div>
+      <div data-aos="fade-up" data-aos-delay="200">Surabaya</div>
+    </div>
+  </section>
+
+  <section id="message" data-aos="fade-left">
+      <h2 data-aos="fade-up">Message Us</h2>
+      <form id="contactForm" data-aos="fade-up" data-aos-delay="100">
+        <input type="text" name="name" placeholder="Name" required data-aos="fade-up" data-aos-delay="200" />
+        <input type="email" name="email" placeholder="Email" required data-aos="fade-up" data-aos-delay="300" />
+        <input type="tel" name="phone" placeholder="Phone Number" required data-aos="fade-up" data-aos-delay="400" />
+        <textarea name="message" placeholder="Your Message" required data-aos="fade-up" data-aos-delay="500"></textarea>
+        <button type="submit" data-aos="zoom-in" data-aos-delay="600">Submit</button>
+      </form>
+      <div id="formResult" data-aos="fade-up" data-aos-delay="700"></div>
+  </section>
+
+
+</body>
+<footer style="
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298, #1b2a49);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+"
+  <p style="margin: 5px 0;">&copy; 2025 Dens Tech. All rights reserved.</p>
+  <p style="margin: 5px 0;">Built with 💻 by <strong>Raden Arizhafri Dzaky Arsandi</strong></p>
+</footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,111 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298, #1b2a49); /* 3 warna gradasi selaras */
+  color: #f0f0f0;
+  line-height: 1.6;
+  height: 100%;
+}
+
+header {
+  background-color: rgba(30, 60, 114, 0.85); /* cocok dengan gradasi */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-image:  linear-gradient(to bottom right, #1e3c72, #2a5298, #1b2a49);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#username:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#home {
+  text-align: center;
+  color: white;
+}
+
+#home h1 span {
+  color: #ffd700;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.locations div {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  color: #1b2a49; /* teks selaras dengan tema biru tua */
+}
+
+/* Form Style */
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #2a5298;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1e3c72;
+}
+
+#formResult {
+  margin-top: 15px;
+  font-weight: bold;
+}

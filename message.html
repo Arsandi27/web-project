@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message Us</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<header data-aos="fade-down">
+  <div style="display: flex; justify-content: center;">
+    <nav style="display: flex; gap: 30px; align-items: center;">
+      <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/home.png" alt="Home Icon" />
+        Home
+      </a>
+      <a href="profile.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/user.png" alt="Profile Icon" />
+        Our Profile
+      </a>
+      <a href="message.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/chat.png" alt="Message Icon" />
+        Message Us
+      </a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+<div data-aos="fade-down" data-aos-duration="800" style="text-align: center; margin-top: 20px;">
+  <span id="username-container" style="
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    color:#ffd700 ;
+  ">
+    Hi <span id="username"></span>
+  </span>
+</div>
+    <section id="message" style="padding: 40px;">
+      <h2 data-aos="fade-up">Message Us</h2>
+      <form id="contactForm" data-aos="fade-up" data-aos-delay="100">
+        <input type="text" name="name" placeholder="Name" required data-aos="fade-up" data-aos-delay="200" />
+        <input type="email" name="email" placeholder="Email" required data-aos="fade-up" data-aos-delay="300" />
+        <input type="tel" name="phone" placeholder="Phone Number" required data-aos="fade-up" data-aos-delay="400" />
+        <textarea name="message" placeholder="Your Message" required data-aos="fade-up" data-aos-delay="500"></textarea>
+        <button type="submit" data-aos="zoom-in" data-aos-delay="600">Submit</button>
+      </form>
+      <div id="formResult" data-aos="fade-up" data-aos-delay="700"></div>
+    </section>
+  </main>
+
+
+  
+</body>
+<footer style="
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298, #1b2a49);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+"
+  <p style="margin: 5px 0;">&copy; 2025 Dens Tech. All rights reserved.</p>
+  <p style="margin: 5px 0;">Built with 💻 by <strong>Raden Arizhafri Dzaky Arsandi</strong></p>
+</footer>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</html>

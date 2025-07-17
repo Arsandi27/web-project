@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Profile</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+<header data-aos="fade-down">
+  <div style="display: flex; justify-content: center;">
+    <nav style="display: flex; gap: 30px; align-items: center;">
+      <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/home.png" alt="Home Icon" />
+        Home
+      </a>
+      <a href="profile.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/user.png" alt="Profile Icon" />
+        Our Profile
+      </a>
+      <a href="message.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: white;">
+        <img src="https://img.icons8.com/ios-filled/20/ffffff/chat.png" alt="Message Icon" />
+        Message Us
+      </a>
+    </nav>
+  </div>
+</header>
+  <main>
+    <section id="profile" style="padding: 40px;" data-aos="fade-right">
+      <h2 data-aos="zoom-in">Our Profile</h2>
+      <img src="img/gedung2.jpg" alt="Company Banner" 
+           style="width:100%; max-height:200px; object-fit:cover; border-radius:10px;" 
+           data-aos="fade-up" data-aos-delay="200">
+      <p data-aos="fade-up" data-aos-delay="300">
+        Kami adalah perusahaan yang bergerak di bidang teknologi informasi sejak tahun 2010. Kami menyediakan solusi digital, mulai dari pengembangan software, konsultasi IT, hingga layanan cloud computing.
+      </p>
+
+      <h3 data-aos="fade-left" data-aos-delay="400">Visi</h3>
+      <p data-aos="fade-up" data-aos-delay="500">Menjadi perusahaan teknologi terdepan yang berkontribusi bagi masyarakat global.</p>
+
+      <h3 data-aos="fade-left" data-aos-delay="600">Misi</h3>
+      <ul data-aos="fade-up" data-aos-delay="700">
+        <li>Menyediakan solusi teknologi yang inovatif.</li>
+        <li>Meningkatkan produktivitas klien melalui digitalisasi.</li>
+        <li>Membangun tim yang profesional dan berdedikasi.</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+<footer style="
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298, #1b2a49);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+"
+  <p style="margin: 5px 0;">&copy; 2025 Dens Tech. All rights reserved.</p>
+  <p style="margin: 5px 0;">Built with 💻 by <strong>Raden Arizhafri Dzaky Arsandi</strong></p>
+</footer>
+<div id="footer-container"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => document.getElementById("footer-container").innerHTML = data);
+</script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
